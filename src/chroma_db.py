@@ -7,6 +7,9 @@ def create_vectorstores(documnets,embedding,CHROMA_PATH):
     :param documnets: Документы | Documents
     :param embedding: Математичекое представления текста | Mathemetical representation of text
     :param CHROMA_PATH: Путь к БД | Path to DB
+
+    Returns:
+        chroma:Готовая векторная база данных | Ready vectorstores
     """
 
     chroma = Chroma.from_documents(
