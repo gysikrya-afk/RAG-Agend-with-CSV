@@ -1,6 +1,9 @@
 from langchain_text_splitters import RecursiveCharacterTextSplitter
+from langchain_classic.schema import Document as LangchainDocument
 
-def document_splitter(document):
+from typing import Iterable
+
+def document_splitter(document:Iterable[LangchainDocument]):
     """
     Разбитие документа на чанки | Splitting a document into chunks
     
