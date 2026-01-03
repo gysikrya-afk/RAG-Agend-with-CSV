@@ -1,17 +1,18 @@
 from langchain_community.document_loaders import CSVLoader
+from langchain_classic.schema import Document as LangchainDocument
 
-def csv_loader(file_csv):
+from typing import List
+
+def csv_loader(file_csv:str) -> List[LangchainDocument]:
     """
-    Загрузка csv файла | Download CSV file
-    
-    :param file_csv: CSV файл | CSV file
+    Загрузка CSV файла как список документов | Download CSV files how list documents
+
+    :param file_csv: Путь к CSV файлу | Path to CSV file
 
     Returns:
-        document:Загруженный документ | Download file
+        documents: Список документов | List documents
     """
 
     loader = CSVLoader(file_path=file_csv)
-
-    document = loader.load()
-
-    return document
+    documents = loader.load()
+    return documents
