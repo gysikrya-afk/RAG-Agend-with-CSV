@@ -1,9 +1,9 @@
-streamlit #Interactive web application\Интерактивное веб приложение\Інтерактивний веб-додаток
+streamlit
 
-langchain #LLM
-langchain-groq #LLM with Groq\LLM с нейросетью Groq\LLM зі штучним інтелектом Groq
-langchain-openai#LLM with OpenAI\LLM с нейросетью OpenAI\LLM зі штучнним інтелектом OpenAI
-langchain-chroma#Vectorstore ChromaDB\Векторная база данных на основе ChromDB\Векторна база данних на основі ChromaDB
-langchain-community#Integration with other service\Интеграция с другими сервисами\Інтеграція з іншими сервісами
+langchain
+langchain-deepseek
+langchain-community
+langchain-chroma
 
-python-dotenv#Read .env/Читать .env/Читати .env
+python-dotenv
+
