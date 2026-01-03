@@ -1,15 +1,15 @@
 from langchain_chroma import Chroma
+from langchain_classic.schema import Document as LangchainDocument
 
-def create_vectorstores(documnets,embedding,CHROMA_PATH):
+from typing import Iterable
+
+def create_vectorstores(documnets: Iterable[LangchainDocument],embedding,CHROMA_PATH:str):
     """
     Создание векторной базы на основе CHROMA_DB | Create vectorstores on ChromaDB
     
     :param documnets: Документы | Documents
     :param embedding: Математичекое представления текста | Mathemetical representation of text
     :param CHROMA_PATH: Путь к БД | Path to DB
-
-    Returns:
-        chroma:Готовая векторная база данных | Ready vectorstores
     """
 
     chroma = Chroma.from_documents(
